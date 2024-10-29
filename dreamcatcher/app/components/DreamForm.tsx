@@ -2,7 +2,7 @@ import React from "react";
 
 function DreamForm() {
   return (
-    <div className="mt-20 flex gap-4 p-1.5 bg-gradient-to-r from-purple-600 via-fuchsia-500 to-blue-800 m-3 rounded-md">
+    <div className="w-full max-w-[800px] px-2  mt-20 flex gap-4 p-1.5 bg-gradient-to-r from-purple-600 via-fuchsia-500 to-blue-800 m-3 rounded-md justify-center items-center">
       <div className="rounded-md p-2 bg-gray-900 w-full">
         <form className="flex flex-col gap-8 p-2 ">
             <label className="text-lg font-medium">Rüyanızı Anlatın</label>
