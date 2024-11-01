@@ -58,7 +58,8 @@ const config: Config = {
   		},
   		animation: {
   			'background-position-spin': 'background-position-spin 3000ms infinite alternate',
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+  			'shiny-text': 'shiny-text 8s infinite'
   		},
   		keyframes: {
   			'background-position-spin': {
@@ -78,6 +79,14 @@ const config: Config = {
   				},
   				to: {
   					'background-position': '0% 0%'
+  				}
+  			},
+  			'shiny-text': {
+  				'0%, 90%, 100%': {
+  					'background-position': 'calc(-100% - var(--shiny-width)) 0'
+  				},
+  				'30%, 60%': {
+  					'background-position': 'calc(100% + var(--shiny-width)) 0'
   				}
   			}
   		}
